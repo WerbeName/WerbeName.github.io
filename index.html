@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WerbeTracker — VALORANT post-match analytics and team planning</title>
+  <meta name="description" content="Independent VALORANT post-match analytics and team strategy planning. Explore the private WerbeTracker prototype and its planned features.">
+  <meta name="theme-color" content="#080d18"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="container nav">
+    <a class="brand" href="./" aria-label="WerbeTracker home"><span class="mark">W</span><span>WERBE<strong>TRACKER</strong></span></a>
+    <nav class="navlinks" aria-label="Main"><a href="#features">Features</a><a href="#workflow">How it works</a><a href="privacy.html">Privacy</a><a href="#contact">Contact</a></nav>
+  </div></header>
+  <main>
+    <section class="container hero">
+      <div><span class="eyebrow">Independent VALORANT analytics · Private prototype</span>
+        <h1>Review your game.<br><em>Build your next play.</em></h1>
+        <p class="lead">WerbeTracker helps consenting players understand their own match history, review performance trends, and prepare coordinated strategies with their team.</p>
+        <div class="hero-actions"><a class="button primary" href="#features">Explore the product ↗</a><a class="button secondary" href="#workflow">See the workflow</a></div>
+        <p class="small-meta">Currently an invite-only local MVP · Public access and Riot Sign On are not available yet.</p>
+      </div>
+      <div class="preview" aria-label="Illustrative sample of the product dashboard; not actual match data">
+        <div class="preview-top"><span class="dot"></span> WERBETRACKER / OVERVIEW <span class="demo-note">ILLUSTRATIVE DEMO</span></div>
+        <div class="mini-cards"><div class="mini"><small>Match review</small><b>01<span class="mint"> / 03</span></b></div><div class="mini"><small>Team slots</small><b>5<span class="mint"> / 5</span></b></div><div class="mini"><small>Strategy</small><b class="mint">READY</b></div></div>
+        <div class="chartbox"><div class="charthead"><span>PERFORMANCE TRENDS</span><span>Post-match only</span></div>
+          <svg viewBox="0 0 510 146" role="img" aria-label="Decorative example of a performance trend chart">
+            <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#58e6cc" stop-opacity=".25"/><stop offset="1" stop-color="#58e6cc" stop-opacity="0"/></linearGradient></defs>
+            <g stroke="#496078" stroke-opacity=".28" stroke-width="1"><path d="M0 22H510M0 58H510M0 94H510M0 130H510"/></g>
+            <path d="M0 118 L43 93 L89 105 L137 67 L174 81 L220 52 L262 69 L305 39 L359 63 L406 22 L451 34 L510 10 L510 140 L0 140Z" fill="url(#area)"/>
+            <path d="M0 118 L43 93 L89 105 L137 67 L174 81 L220 52 L262 69 L305 39 L359 63 L406 22 L451 34 L510 10" fill="none" stroke="#62eed2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="510" cy="10" r="5" fill="#62eed2"/>
+          </svg>
+        </div>
+        <div class="micro-list"><div class="micro-row"><span>Match archive → insights</span><b>REVIEW</b></div><div class="micro-row"><span>Team coordination → gameplans</span><b>PLAN</b></div><div class="micro-row"><span>Real-time opponent scouting</span><b class="rose">NOT SUPPORTED</b></div></div>
+      </div>
+    </section>
+    <section id="features" class="container section"><div class="section-intro"><span class="eyebrow">What WerbeTracker does</span><h2>Analytics with a purpose.</h2><p>Focused on post-match learning and voluntary collaboration, not in-match tactical advantage.</p></div>
+      <div class="feature-grid"><article class="feature"><div class="symbol">◫</div><h3>Match archive</h3><p>Review imported matches, results, agents, RR changes where available, and source-backed round details.</p></article><article class="feature"><div class="symbol">⌁</div><h3>Performance insights</h3><p>Explore trends by map, agent, session, and time. Missing data stays marked as unknown.</p></article><article class="feature"><div class="symbol">◇</div><h3>Personalized planning</h3><p>Get explainable, pre-match agent suggestions based on your authorized match history, not opponent scouting.</p></article><article class="feature"><div class="symbol">◎</div><h3>Team sessions</h3><p>Organize invited players, choose a coordinated group, and associate saved team plans with a session.</p></article><article class="feature"><div class="symbol">⌘</div><h3>Strategy editor</h3><p>Prepare versioned gameplans with roles, phases, positions, paths, and utility on a neutral diagram.</p></article><article class="feature"><div class="symbol">♧</div><h3>Privacy controls</h3><p>Account-based access, controlled profile sharing, private teams, and explicit permissions for collaboration.</p></article></div>
+    </section>
+    <section id="workflow" class="container section"><div class="section-intro"><span class="eyebrow">Product workflow</span><h2>From history to improvement.</h2><p>These steps describe the currently developed local MVP. Availability for the public is subject to testing, legal review, and necessary approvals.</p></div>
+      <div class="steps"><article class="step"><h3>Import your archive</h3><p>An authorized local collector supplies existing match data. Private credentials remain on the owner's computer.</p></article><article class="step"><h3>Review your performance</h3><p>Inspect your matches, trends, and evidence-based insights after gameplay. You decide what profile information to share.</p></article><article class="step"><h3>Coordinate your team</h3><p>Invite teammates, prepare strategies and gameplans, and review your efforts between matches.</p></article></div>
+    </section>
+    <section class="container section" id="contact"><div class="notice"><strong>Prototype status & contact</strong><p>WerbeTracker is an independent project under active development. The public website is informational and does not provide a public application login. For project inquiries, visit <a href="https://github.com/WerbeName" rel="noopener noreferrer">the developer's GitHub profile</a>. Do not publish account credentials or personal match archives in public GitHub issues.</p><p>Review our <a href="privacy.html">Privacy Notice</a> and <a href="terms.html">Terms of Use</a>.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-row"><span>© 2026 WerbeTracker · Independent project</span><div class="footlinks"><a href="./">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/WerbeName" rel="noopener noreferrer">Developer</a></div></div><p class="disclaimer">WerbeTracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p></div></footer>
+</body></html>
