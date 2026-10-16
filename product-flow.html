@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Public visual product flow showing how WerbeTracker intends to use opt-in Riot authentication for post-match VALORANT analytics and team planning.">
+<title>Product Flow / Public Prototype — WerbeTracker</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.flow-hero{max-width:920px;padding-top:72px;padding-bottom:20px}
+.flow-hero h1{font-size:clamp(2.8rem,5vw,4.4rem)}
+.flow-hero p{font-size:1.05rem;color:#b6cbd9}
+.status-panel{border:1px solid rgba(82,234,203,.3);background:rgba(82,234,203,.065);border-radius:14px;padding:20px 25px;margin-top:22px}
+.status-panel strong{color:#6bf1d6}
+.journey{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding-top:38px}
+.stage{border:1px solid rgba(157,212,230,.15);border-radius:14px;background:linear-gradient(160deg,#14243b,#0e1727);padding:17px;min-width:0}
+.stage .number{color:#60e9ce;font-size:.76rem;letter-spacing:.12em;font-weight:800}
+.stage h2{font-size:1rem;margin:9px 0}
+.stage p{font-size:.82rem;color:#a9c1d1;margin:0}
+.screen-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding-top:47px}
+.screen{border-radius:17px;overflow:hidden;border:1px solid rgba(110,237,222,.2);background:#0b1526;box-shadow:0 16px 50px #0004}
+.screen-top{padding:15px 22px;border-bottom:1px solid rgba(157,212,230,.15);font-size:.71rem;letter-spacing:.13em;color:#a7c7d3;font-weight:800;display:flex;justify-content:space-between;gap:14px}
+.screen-inner{padding:23px;min-height:280px}
+.screen-inner h3{font-size:1.34rem;margin:0 0 10px}
+.screen-inner p{color:#a7bdcb;font-size:.89rem;line-height:1.6}
+.preview-button{display:inline-block;margin-top:12px;padding:10px 19px;background:#63ebd5;color:#091f29;border-radius:8px;font-size:.83rem;font-weight:800}
+.pill{font-size:.65rem;font-weight:800;padding:5px 8px;background:rgba(82,234,203,.12);color:#6cf0d5;border-radius:6px}
+.disabled{color:#8fa3b3;border:1px dashed rgba(173,203,216,.4);background:rgba(185,201,212,.04);border-radius:10px;padding:15px;font-size:.85rem;line-height:1.6}
+.mock-row{display:flex;gap:11px;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(157,212,230,.12);font-size:.85rem;color:#b9d1df}
+.mock-row strong{color:#d8eff5}
+.mock-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:13px 0}
+.mock-metric{background:#182944;padding:11px;border:1px solid rgba(157,212,230,.15);border-radius:10px}
+.mock-metric span{display:block;color:#9fb5c3;font-size:.68rem}
+.mock-metric strong{display:block;font-size:1.2rem;color:#e1fdf9}
+.visual-chart{width:100%;height:95px;display:block;margin-top:19px}
+.stage-status{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#62e8cb;margin:5px 0 0}
+.stage-status.future{color:#eac488}
+.usage{margin-top:50px}
+.usage h2{font-size:1.7rem}
+.usage p{color:#a9bece;max-width:900px}
+.usage .notice{margin-top:19px}
+@media(max-width:1040px){.journey{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:690px){.journey,.screen-layout{grid-template-columns:1fr}.flow-hero{padding-top:45px}.screen-inner{min-height:unset}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav"><a class="brand" href="./"><span class="mark">W</span><span>WERBE<strong>TRACKER</strong></span></a><nav class="navlinks" aria-label="Main"><a href="./">Home</a><a href="product-flow.html" aria-current="page">Product flow</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main>
+<section class="container flow-hero">
+<span class="eyebrow">Public review / Visual prototype</span>
+<h1>From consent to <em>better teamwork.</em></h1>
+<p>Explore the planned player journey of WerbeTracker, an independent VALORANT post-match analytics and team preparation platform. This public visual flow is designed for reviewers and prospective users.</p>
+<div class="status-panel"><strong>Development status: local MVP + planned public onboarding.</strong><br>
+The product currently runs as a private local prototype. Riot Sign On and publicly hosted player accounts are not yet implemented. The screens below are <b>illustrations, not a live application</b>; all display values are fictional.</div>
+</section>
+<section class="container">
+<div class="journey" aria-label="Intended user journey">
+<article class="stage"><span class="number">01 / DISCOVER</span><h2>Learn & sign up</h2><p>Review features, privacy policy and terms before requesting access.</p><p class="stage-status">Public website live</p></article>
+<article class="stage"><span class="number">02 / AUTHORIZE</span><h2>Riot Sign On</h2><p>Planned OAuth consent links the player's own Riot account. No passwords are collected by WerbeTracker.</p><p class="stage-status future">Requires Riot approval</p></article>
+<article class="stage"><span class="number">03 / REVIEW</span><h2>My match archive</h2><p>View only permitted post-match records, rank changes and trends after authorization.</p><p class="stage-status">Local MVP</p></article>
+<article class="stage"><span class="number">04 / IMPROVE</span><h2>Insight & coaching</h2><p>Inspect evidence-backed personal performance summaries; unavailable data stays unavailable.</p><p class="stage-status">Local MVP / expanding</p></article>
+<article class="stage"><span class="number">05 / COORDINATE</span><h2>Private team</h2><p>Invite team members, plan agent compositions, and create pre-match gameplans with permission controls.</p><p class="stage-status">Local MVP / expanding</p></article>
+</div>
+</section>
+<section class="container screen-layout" aria-label="Illustrative product screens">
+<article class="screen"><div class="screen-top"><span>SCREEN A — ACCOUNT CONNECTION</span><span class="pill">PLANNED</span></div><div class="screen-inner"><h3>Your data. Your choice.</h3><p>The intended production onboarding requests explicit permission through Riot Sign On. Player statistics are not exposed to other users before the required opt-in and access checks.</p><div class="disabled">Riot Sign On — preview only<br><small>Real OAuth integration begins only after production approval and RSO client provisioning.</small></div><div class="mock-row"><span>Riot account password</span><strong>Never entered here</strong></div><div class="mock-row"><span>Public sharing</span><strong>Consent-controlled</strong></div></div></article>
+<article class="screen"><div class="screen-top"><span>SCREEN B — MATCH REVIEW</span><span class="pill">ILLUSTRATIVE</span></div><div class="screen-inner"><h3>Understand your matches.</h3><p>Private post-match performance summaries with transparent data coverage.</p><div class="mock-metrics"><div class="mock-metric"><span>Matches</span><strong>—</strong></div><div class="mock-metric"><span>Win rate</span><strong>—</strong></div><div class="mock-metric"><span>Ranked RR</span><strong>—</strong></div></div><svg class="visual-chart" viewBox="0 0 460 100" role="img" aria-label="Illustrative unlabeled trend shape, not real player data"><g stroke="#36506e" stroke-opacity=".5"><path d="M0 20H460M0 50H460M0 80H460"/></g><path d="M0 71L58 63L104 74L161 43L212 57L262 34L322 43L381 22L460 30" fill="none" stroke="#63e9d1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="mock-row"><span>Post-match analytics</span><strong>No live opponent scouting</strong></div></div></article>
+<article class="screen"><div class="screen-top"><span>SCREEN C — COACH & TRENDS</span><span class="pill">ILLUSTRATIVE</span></div><div class="screen-inner"><h3>Actionable, explainable insights.</h3><p>Summaries should cite the matches and statistics behind them, highlighting sample sizes and missing data rather than inventing recommendations.</p><div class="mock-row"><span>Match evidence</span><strong>Linked to authorized archive</strong></div><div class="mock-row"><span>Agent / map trends</span><strong>After a match</strong></div><div class="mock-row"><span>AI recommendations</span><strong>With evidence & limits</strong></div><div class="disabled">No example player identity, real user match statistics or AI-generated performance claims are published here.</div></div></article>
+<article class="screen"><div class="screen-top"><span>SCREEN D — TEAM PREPARATION</span><span class="pill">ILLUSTRATIVE</span></div><div class="screen-inner"><h3>Make a plan before queueing.</h3><p>Create a private team, invite known members and prepare role assignments or gameplans before a match starts.</p><div class="mock-row"><span>Team roster</span><strong>Invitation-only</strong></div><div class="mock-row"><span>Smart Draft</span><strong>Own & consented data</strong></div><div class="mock-row"><span>Strategy editor</span><strong>Pre-match planning</strong></div><div class="disabled">The intended experience is pre-match planning and post-match reflection. It does not include real-time competitive decisions or opponent scouting.</div></div></article>
+</section>
+<section class="container usage"><h2>How the Riot API would be used</h2>
+<p>With player opt-in implemented through Riot Sign On, WerbeTracker intends to identify the consenting player and retrieve their authorized matchlist and match details for review and analysis. Aggregations such as agent trends, match outcomes, and coaching context would be derived after gameplay. Riot's API does not provide live match guidance or professional esports data for this product.</p>
+<div class="notice"><strong>Reviewer note:</strong> This is a public visual flow for a product under development, not a publicly usable VALORANT stats service. The app will not open account-linked player history publicly until the required Riot approval, RSO onboarding, opt-in and privacy checks are complete. No official API credentials or private data are exposed on this site.</div>
+</section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-row"><span>© 2026 WerbeTracker · Independent project</span><div class="footlinks"><a href="./">Home</a><a href="product-flow.html">Product flow</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><p class="disclaimer">WerbeTracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p></div></footer>
+</body>
+</html>
